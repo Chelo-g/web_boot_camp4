@@ -1,0 +1,33 @@
+.concept-info {
+  width: 538px;
+  &--info {
+    width: 538px;
+    text-align: right;
+  }
+  &__title {
+    @include font-size(63);
+    color: $main-text-color;
+    padding-bottom: 18px;
+  }
+  &__sub-title {
+    @include font-size(30);
+    color: $sub-text-color2;
+    padding-bottom: 41px;
+  }
+  %__message {
+    @include font-size(16);
+    color: $sub-text-color3;
+  }
+  &__message {
+    &1 {
+      @extend %__message;
+    }
+    &2 {
+      @extend %__message;
+      line-height: calc(40 / 16);
+    }
+    &3 {
+      @extend %__message;
+    }
+  }
+}

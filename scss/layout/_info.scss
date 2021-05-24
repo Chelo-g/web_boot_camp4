@@ -1,0 +1,19 @@
+.info {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-image: url("../../img/bgimg_first-view.png");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    @include font-size(63);
+    color: $sub-text-color;
+    //weight demi
+    padding-bottom: 18px;
+  }
+  &__sub-title {
+    @include font-size(38);
+    color: $sub-text-color;
+    padding-bottom: 38px;
+  }
+}

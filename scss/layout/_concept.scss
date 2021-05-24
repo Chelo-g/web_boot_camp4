@@ -1,0 +1,10 @@
+.concept {
+  padding-top: 130px;
+  min-width: $min-width;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    padding-left: 46px;
+  }
+}

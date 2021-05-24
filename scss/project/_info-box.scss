@@ -1,0 +1,20 @@
+.info-box {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 825px;
+  height: 337px;
+  background-color: $sub-text-color;
+  &__text-area {
+    display: flex;
+    width: 345px;
+    flex-direction: column;
+  }
+  &__message {
+    @include font-size(18);
+    line-height: calc(27.2 / 18);
+    text-align: center;
+    color: $sub-text-color4;
+  }
+}

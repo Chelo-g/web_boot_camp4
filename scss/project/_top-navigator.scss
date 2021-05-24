@@ -1,0 +1,14 @@
+.top-navigator {
+  display: flex;
+  height: 36px;
+  &__items {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    padding-left: 38px;
+    color: $sub-text-color;
+  }
+}

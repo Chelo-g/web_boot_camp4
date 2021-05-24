@@ -1,0 +1,10 @@
+.select {
+  display: flex;
+  justify-content: center;
+  min-width: $min-width;
+  padding-top: 90px;
+  padding-bottom: 55px;
+  &__img {
+    padding-right: 46px;
+  }
+}

@@ -1,0 +1,13 @@
+.info-box-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    @include font-size(23);
+  }
+
+  &__decoration {
+    height: 20px;
+    padding: 19px;
+  }
+}
