@@ -1,0 +1,32 @@
+.menu-box {
+  height: 456px;
+  width: 1170px;
+  background-color: $sub-text-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    height: 275px;
+    width: 275px;
+    object-fit: cover;
+  }
+  &__menu-name {
+    display: flex;
+    @include font-size(18);
+    color: $main-text-color;
+    padding-top: 27px;
+    padding-bottom: 10px;
+  }
+  &__price {
+    @include font-size(20);
+    color: $sub-text-color5;
+    &--unit {
+      @include font-size(14);
+    }
+  }
+}

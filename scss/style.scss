@@ -11,10 +11,8 @@
 @import "./layout/header-navigator";
 @import "./project/site-logo";
 @import "./project/top-navigator";
-
 //main contetns
 @import "./layout/main-contents";
-
 //concept
 @import "./layout/concept";
 @import "./project/concept-info";
@@ -24,6 +22,15 @@
 @import "./layout/info";
 @import "./project/info-box";
 @import "./project/info-box-logo";
+//menu
+@import "./layout/menu";
+@import "./project/menu-box";
+//access
+@import "./layout/access";
+@import "./project/access-map";
+//footer
+@import "./layout/footer";
+@import "./project/footer-navigator";
 
 //body
 @import "./layout/body";

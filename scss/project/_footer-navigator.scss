@@ -1,0 +1,8 @@
+.footer-navigator {
+  display: flex;
+  @include font-size(15);
+  color: $sub-text-color;
+  &__item + &__item {
+    padding-left: 30px;
+  }
+}
