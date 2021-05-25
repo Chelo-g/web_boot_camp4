@@ -1,6 +1,11 @@
 .header-navigator {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: $top-navigator-width;
+  justify-content: space-around;
+}
+
+@include mq {
+  .header-navigator {
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
 }

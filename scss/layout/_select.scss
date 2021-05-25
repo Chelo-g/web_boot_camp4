@@ -1,10 +1,21 @@
 .select {
   display: flex;
   justify-content: center;
-  min-width: $min-width;
   padding-top: 90px;
   padding-bottom: 55px;
   &__img {
     padding-right: 46px;
+  }
+}
+@include mq {
+  .select {
+    flex-direction: column-reverse;
+    padding-left: $left-margin-px;
+    &__img {
+      width: $media-width;
+      object-fit: cover;
+      padding-top: 20px;
+      padding-right: 0;
+    }
   }
 }

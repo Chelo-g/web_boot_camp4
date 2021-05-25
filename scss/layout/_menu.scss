@@ -22,3 +22,13 @@
     text-align: center;
   }
 }
+
+@include mq {
+  .menu {
+    align-items: flex-start;
+    padding-left: $left-margin-px;
+    &__message {
+      text-align: left;
+    }
+  }
+}

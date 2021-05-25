@@ -17,6 +17,9 @@
 @import "./layout/header-navigator";
 @import "./project/site-logo";
 @import "./project/top-navigator";
+@import "./project/burger-btn";
+@import "./project/nav-wrapper";
+
 //main contetns
 @import "./layout/main-contents";
 //concept
@@ -40,3 +43,6 @@
 
 //body
 @import "./layout/body";
+
+//js
+@import "./project/js-btn-goto-top";

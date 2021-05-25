@@ -6,7 +6,6 @@
   &__title {
     @include font-size(63);
     color: $main-text-color;
-    //weight demi
     padding-bottom: 20px;
   }
   &__sub-title {
@@ -20,5 +19,18 @@
     padding-top: 40px;
     padding-bottom: 88px;
     text-align: center;
+  }
+}
+
+@include mq {
+  .access {
+    align-items: flex-start;
+    padding-left: $left-margin-px;
+    &__message {
+      text-align: left;
+    }
+    &__map {
+      width: $media-width;
+    }
   }
 }

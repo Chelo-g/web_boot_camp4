@@ -16,5 +16,15 @@
     line-height: calc(27.2 / 18);
     text-align: center;
     color: $sub-text-color4;
+    padding-top: 19px;
+  }
+}
+
+@include mq {
+  .info-box {
+    width: $media-width;
+    &__img {
+      width: 20vw;
+    }
   }
 }

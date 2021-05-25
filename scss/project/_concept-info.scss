@@ -31,3 +31,11 @@
     }
   }
 }
+
+@include mq {
+  .concept-info {
+    &--info {
+      text-align: left;
+    }
+  }
+}
