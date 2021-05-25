@@ -18,4 +18,3 @@ https://usagidesign-e.com/download/
 ##### title
 
 kaku_cafe
-
