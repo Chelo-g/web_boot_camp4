@@ -1,7 +1,10 @@
+/*!
+  template  :https://usagidesign-e.com/download/
+  file      :kaku_cafe
+  Chelo
+*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.15.3/css/regular.css");
-@import url("https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css");
 .header {
   padding-top: 30px;
   display: -webkit-box;
@@ -70,7 +73,7 @@
 }
 
 .main-contents {
-  background-image: url("../../img/bgimg_other.png");
+  background-image: url("../img/bgimg_other.png");
 }
 
 .concept {
@@ -141,7 +144,7 @@
 .info {
   padding-top: 100px;
   padding-bottom: 90px;
-  background-image: url("../../img/bgimg-info.png");
+  background-image: url("../img/bgimg-info.png");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -376,7 +379,7 @@
 .footer {
   padding-top: 66px;
   padding-bottom: 48px;
-  background-image: url("../../img/bgimg_footer.png");
+  background-image: url("../img/bgimg_footer.png");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
