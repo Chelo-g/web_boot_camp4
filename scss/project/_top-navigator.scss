@@ -12,3 +12,26 @@
     color: $sub-text-color;
   }
 }
+
+@include mq {
+  .top-navigator {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1310;
+    z-index: 2;
+    &__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    &__item {
+      padding-left: 0px;
+    }
+    &__item + &__item {
+      padding-top: 40px;
+    }
+  }
+}

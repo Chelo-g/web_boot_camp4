@@ -1,0 +1,50 @@
+.burger-btn {
+  display: none;
+}
+
+@include mq {
+  .burger-btn {
+    display: flex;
+    width: 39px;
+    height: 39px;
+    position: relative;
+    z-index: 3;
+    border: none;
+    %__btn {
+      width: 20px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+    }
+    &__btn {
+      &--top {
+        @extend %__btn;
+        top: 10px;
+        &-close {
+          transform: translate(-50%, 10px) rotate(45deg) !important;
+          transition: transform 0.3s;
+        }
+      }
+      &--mid {
+        @extend %__btn;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &-close {
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      }
+      &--bottom {
+        @extend %__btn;
+        bottom: 10px;
+        &-close {
+          transform: translate(-50%, -8px) rotate(-45deg) !important;
+          transition: transform 0.3s;
+        }
+      }
+    }
+  }
+}

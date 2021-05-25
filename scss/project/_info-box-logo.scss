@@ -4,10 +4,10 @@
   flex-direction: column;
   &__title {
     @include font-size(23);
+    padding: 20px 0;
   }
 
   &__decoration {
     height: 20px;
-    padding: 19px;
   }
 }

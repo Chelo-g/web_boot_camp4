@@ -30,3 +30,14 @@
     }
   }
 }
+
+@include mq {
+  .menu-box {
+    width: $media-width;
+    &__img {
+      width: 20vw;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

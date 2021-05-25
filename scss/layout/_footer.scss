@@ -25,3 +25,13 @@
     color: $sub-text-color;
   }
 }
+
+@include mq {
+  .footer {
+    padding-left: $left-margin-px;
+    align-items: flex-start;
+    &__adress {
+      text-align: left;
+    }
+  }
+}

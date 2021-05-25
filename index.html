@@ -17,24 +17,31 @@
             <div class="site-logo">
                 <img class="site-logo__img" src="./img/site-logo.png" alt="">
             </div>
-            <div class="top-navigator">
-                <ul class="top-navigator__items">
-                    <a class="top-navigator__item" href="#concept">
-                        <li>CONCEPT</li>
-                    </a>
-                    <a class="top-navigator__item" href="#info">
-                        <li>INFOMATION</li>
-                    </a>
-                    <a class="top-navigator__item" href="#menu">
-                        <li>MENU</li>
-                    </a>
-                    <a class="top-navigator__item" href="#access">
-                        <li>ACCESS</li>
-                    </a>
-                    <a class="top-navigator__item" href="#mail">
-                        <li>MAIL</li>
-                    </a>
-                </ul>
+            <div class="nav-wrapper">
+                <div class="top-navigator">
+                    <ul class="top-navigator__items">
+                        <a class="top-navigator__item" href="#concept">
+                            <li>CONCEPT</li>
+                        </a>
+                        <a class="top-navigator__item" href="#info">
+                            <li>INFOMATION</li>
+                        </a>
+                        <a class="top-navigator__item" href="#menu">
+                            <li>MENU</li>
+                        </a>
+                        <a class="top-navigator__item" href="#access">
+                            <li>ACCESS</li>
+                        </a>
+                        <a class="top-navigator__item" href="#mail">
+                            <li>MAIL</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger-btn">
+                <span class="burger-btn__btn--top"></span>
+                <span class="burger-btn__btn--mid"></span>
+                <span class="burger-btn__btn--bottom"></span>
             </div>
         </div>
     </header>
@@ -51,7 +58,7 @@
             <img class="concept__img" src="./img/concept_img.png" alt="">
         </div>
         <div class="select">
-            <img class="select__img" src="./img/concept_img.png" alt="">
+            <img class="select__img" src="./img/select_img.png" alt="">
             <div class="concept-info--info">
                 <div class="concept-info__title">SELECT</div>
                 <div class="concept-info__sub-title">厳選しています</div>
@@ -73,9 +80,9 @@
                 <img class="info-box__img" src="./img/info_img.png" alt="">
                 <div class="info-box__text-area">
                     <div class="info-box-logo">
-                        <img class="info-box-logo__decoration" src="./img/info_title-decoration_top.svg" alt="">
+                        <img class="info-box-logo__decoration" src="./img/info-decoration-top@2x.png" alt="">
                         <p class="info-box-logo__title">2月はグァテマラ産が特別価格</p>
-                        <img class="info-box-logo__decoration" src="./img/info_title-decoration_bottom.svg" alt="">
+                        <img class="info-box-logo__decoration" src="./img/info-decoration-bottom@2x.png" alt="">
                     </div>
                     <div class="info-box__message">
                         グアテマラは中南米のコーヒー生産のとても盛んなエリアで甘い香りと力強いコクが特徴のコーヒー豆です。たぶん。
@@ -89,21 +96,21 @@
             <div class="menu__box">
                 <div class="menu-box">
                     <div class="menu-box__item">
-                        <div class="menu-box__img"><img src="./img/menu_img01.png" alt=""></div>
+                        <img class="menu-box__img" src="./img/menu_img01.png" alt="">
                         <div class="menu-box__menu-name">ブレンドコーヒー</div>
                         <div class="menu-box__price">450
                             <span class="menu-box__price--unit">円</span>
                         </div>
                     </div>
                     <div class="menu-box__item">
-                        <div class="menu-box__img"><img src="./img/menu_img02.png" alt=""></div>
+                        <img class="menu-box__img" src="./img/menu_img02.png" alt="">
                         <div class="menu-box__menu-name">グアテマラコーヒー</div>
                         <div class="menu-box__price">4
                             <span class="menu-box__price--unit">$</span>
                         </div>
                     </div>
                     <div class="menu-box__item">
-                        <div class="menu-box__img"><img src="./img/menu_img03.png" alt=""></div>
+                        <img class="menu-box__img" src="./img/menu_img03.png" alt="">
                         <div class="menu-box__menu-name">タピオカミルクティ</div>
                         <div class="menu-box__price">26
                             <span class="menu-box__price--unit">元</span>
@@ -118,7 +125,7 @@
         <div class="access" id="access">
             <div class="access__title">ACCESS</div>
             <div class="access__sub-title">アクセスマップ</div>
-            <div class="access-map"><img src="./img/access_img.png" alt=""></div>
+            <img class="access__map" src="./img/access_img.png" alt="">
             <div class="access__message">JRなんとか駅なんとか口より徒歩３分です。<br>
                 なんとか線なんとか駅なんとか口より徒歩５分です。</div>
         </div>
@@ -147,7 +154,13 @@
             <div class="footer__copyright">©️2019 Cafe Calmati sample. </div>
         </div>
     </div>
+    <div class="js-btn-goto-top">
+        <a href="#">
+            <img class="js-btn-goto-top__img" src="./img/btn_page-top@2x.png" alt=""> </a>
+    </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src=" ./js/script.js"> </script>
 </body>
 
 </html>
