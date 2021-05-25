@@ -29,9 +29,14 @@
 @include mq {
   .footer {
     padding-left: $left-margin-px;
+    padding-right: 20px;
     align-items: flex-start;
+    width: 100vw;
     &__adress {
       text-align: left;
+    }
+    &__navigator {
+      padding: 20px 0;
     }
   }
 }

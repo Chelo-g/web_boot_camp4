@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 1200px) {
   .header {
-    height: calc(768px / 1.5);
+    height: 50vh;
   }
 }
 
@@ -230,7 +230,7 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 20px;
+    padding-left: 5vw;
   }
   .concept__img {
     width: 80vw;
@@ -301,7 +301,7 @@
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-left: 20px;
+    padding-left: 5vw;
   }
   .select__img {
     width: 80vw;
@@ -351,7 +351,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 5vw;
   }
 }
 
@@ -471,7 +471,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 5vw;
   }
   .menu__message {
     text-align: left;
@@ -593,7 +593,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 5vw;
   }
   .access__message {
     text-align: left;
@@ -651,14 +651,19 @@
 
 @media screen and (max-width: 1200px) {
   .footer {
-    padding-left: 20px;
+    padding-left: 5vw;
+    padding-right: 20px;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100vw;
   }
   .footer__adress {
     text-align: left;
+  }
+  .footer__navigator {
+    padding: 20px 0;
   }
 }
 
@@ -673,6 +678,26 @@
 
 .footer-navigator__item + .footer-navigator__item {
   padding-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-navigator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-media-navigator {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90vw;
+  }
 }
 
 body {

@@ -8,7 +8,6 @@ $(function () {
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     console.log(href);
     if (href !== "#") {
-      console.log("not html");
       toggle_burger_menu();
     }
     return false;
@@ -25,7 +24,7 @@ $(window).scroll(function () {
     $(btn_class).fadeOut();
   }
 });
-/* buger */
+/* burger */
 $(".burger-btn").on("click", function () {
   toggle_burger_menu();
 });
