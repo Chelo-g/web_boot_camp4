@@ -581,6 +581,7 @@
 
 .access {
   padding-top: 100px;
+  padding: 0 10vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -639,9 +640,8 @@
 }
 
 .access-gmap {
-  width: 1200px;
-  height: 0;
-  overflow: hidden;
+  width: 100%;
+  height: 0px;
   padding-bottom: 56.25%;
   position: relative;
 }
