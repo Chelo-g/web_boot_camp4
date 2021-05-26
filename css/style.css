@@ -20,11 +20,12 @@
   background-size: cover;
   background-position: center;
   height: 768px;
+  max-width: 100vw;
 }
 
 @media screen and (max-width: 1200px) {
   .header {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -205,6 +206,7 @@
 
 .main-contents {
   background-image: url("../img/bgimg_other.png");
+  max-width: 100vw;
 }
 
 .concept {
@@ -243,10 +245,12 @@
 
 .concept-info {
   width: 538px;
+  max-width: 80vw;
 }
 
 .concept-info--info {
   width: 538px;
+  max-width: 80vw;
   text-align: right;
 }
 
@@ -384,6 +388,7 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 70vw;
 }
 
 .info-box__message {
@@ -397,9 +402,18 @@
 @media screen and (max-width: 1200px) {
   .info-box {
     width: 80vw;
+    height: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .info-box__img {
-    width: 20vw;
+    width: 33vw;
+    padding-bottom: 5vw;
   }
 }
 
@@ -541,12 +555,27 @@
 @media screen and (max-width: 1200px) {
   .menu-box {
     width: 80vw;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
   }
   .menu-box__img {
-    width: 20vw;
+    width: 33vw;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .menu-box__item {
+    padding-bottom: 5vw;
   }
 }
 
@@ -597,6 +626,7 @@
   }
   .access__message {
     text-align: left;
+    width: 80vw;
   }
   .access__map {
     width: 80vw;
@@ -606,6 +636,31 @@
 .access-map {
   width: 1170px;
   height: 341px;
+}
+
+.access-gmap {
+  width: 1200px;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.access-gmap__map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .access-gmap {
+    width: 80vw;
+  }
+  .access-gmap__map {
+    width: 80vw;
+  }
 }
 
 .footer {
@@ -702,10 +757,15 @@
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  word-break: break-all;
 }
 
 body.noscroll {
   overflow: hidden;
+}
+
+html {
+  font-size: calc((100vw * 0.00485 ) +  10.18182px);
 }
 
 .js-btn-goto-top {

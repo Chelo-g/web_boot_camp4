@@ -1,3 +1,7 @@
+var goto_top_btn_class = ".js-btn-goto-top";
+var fadeIn_pixel = 768;
+var is_displayed_burger = false;
+
 /* scroll to # */
 $(function () {
   $('a[href^="#"]').click(function () {
@@ -6,26 +10,25 @@ $(function () {
     var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
-    console.log(href);
-    if (href !== "#") {
+    if (href !== "#" && is_displayed_burger == true) {
       toggle_burger_menu();
     }
     return false;
   });
 });
+
 /* scroll to top */
-var btn_class = ".js-btn-goto-top";
-var fadeIn_pixel = 768;
-$(btn_class).hide();
+$(goto_top_btn_class).hide();
 $(window).scroll(function () {
   if ($(this).scrollTop() > fadeIn_pixel) {
-    $(btn_class).fadeIn();
+    $(goto_top_btn_class).fadeIn();
   } else {
-    $(btn_class).fadeOut();
+    $(goto_top_btn_class).fadeOut();
   }
 });
 /* burger */
 $(".burger-btn").on("click", function () {
+  is_displayed_burger = !is_displayed_burger;
   toggle_burger_menu();
 });
 

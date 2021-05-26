@@ -1,0 +1,23 @@
+.access-gmap {
+  width: $min-width;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  &__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@include mq {
+  .access-gmap {
+    width: $media-width;
+    &__map {
+      width: $media-width;
+    }
+  }
+}

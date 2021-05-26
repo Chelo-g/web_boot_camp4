@@ -12,3 +12,17 @@ $sub-text-color3: #3d3d3d;
 $sub-text-color4: #626d83;
 $sub-text-color5: #b84b1b;
 $mail-box-color: #ebdbb0;
+
+//font-size calc
+//基準となる値を代入する
+$base-fontsize1: 16;
+$base-widthsize1: 1200;
+$base-fontsize2: 12;
+$base-widthsize2: 375;
+
+$base-font-slope: ($base-fontsize1 - $base-fontsize2)/ ($base-widthsize1 -
+      $base-widthsize2);
+$base-font-intercept: $base-fontsize1 - $base-widthsize1 * $base-font-slope;
+
+$base-font-size: #{"calc((100vw"} * $base-font-slope #{") + "}
+  $base-font-intercept#{"px)"};

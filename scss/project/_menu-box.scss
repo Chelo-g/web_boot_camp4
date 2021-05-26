@@ -34,10 +34,18 @@
 @include mq {
   .menu-box {
     width: $media-width;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: $left-margin-px;
+    padding-bottom: $left-margin-px;
     &__img {
-      width: 20vw;
+      width: 33vw;
       height: auto;
       object-fit: cover;
+    }
+    &__item {
+      padding-bottom: $left-margin-px;
     }
   }
 }

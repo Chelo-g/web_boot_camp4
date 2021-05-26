@@ -28,6 +28,7 @@
     padding-left: $left-margin-px;
     &__message {
       text-align: left;
+      width: $media-width;
     }
     &__map {
       width: $media-width;

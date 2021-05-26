@@ -10,6 +10,7 @@
     display: flex;
     width: 345px;
     flex-direction: column;
+    max-width: 70vw;
   }
   &__message {
     @include font-size(18);
@@ -23,8 +24,13 @@
 @include mq {
   .info-box {
     width: $media-width;
+    height: auto;
+    padding-top: $left-margin-px;
+    padding-bottom: $left-margin-px;
+    flex-direction: column;
     &__img {
-      width: 20vw;
+      width: 33vw;
+      padding-bottom: $left-margin-px;
     }
   }
 }
