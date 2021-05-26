@@ -5,6 +5,12 @@
   &__item + &__item {
     padding-left: 30px;
   }
+  &__link {
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 @include mq {

@@ -82,6 +82,15 @@
   color: #fffff7;
 }
 
+.top-navigator__link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-navigator__link:hover {
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 1200px) {
   .top-navigator {
     display: -webkit-box;
@@ -733,6 +742,15 @@
 
 .footer-navigator__item + .footer-navigator__item {
   padding-left: 30px;
+}
+
+.footer-navigator__link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-navigator__link:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1200px) {
