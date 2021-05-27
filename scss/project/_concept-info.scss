@@ -1,11 +1,6 @@
 .concept-info {
   width: 538px;
   max-width: 80vw;
-  &--info {
-    width: 538px;
-    max-width: 80vw;
-    text-align: right;
-  }
   &__title {
     @include font-size(63);
     color: $main-text-color;
@@ -14,23 +9,36 @@
   &__sub-title {
     @include font-size(30);
     color: $sub-text-color2;
-    padding-bottom: 41px;
+    /* padding-bottom: 41px; */
+    @include padding-bottom(41);
   }
-  %__message {
+  /*   %__message {
     @include font-size(16);
+    line-height: 1.5;
     color: $sub-text-color3;
-  }
+  } */
   &__message {
     &1 {
-      @extend %__message;
+      @include font-size(16);
+      line-height: 1.5;
+      color: $sub-text-color3;
     }
     &2 {
-      @extend %__message;
+      @include font-size(16);
+      line-height: 1.5;
+      color: $sub-text-color3;
       line-height: calc(40 / 16);
     }
     &3 {
-      @extend %__message;
+      @include font-size(16);
+      line-height: 1.5;
+      color: $sub-text-color3;
     }
+  }
+  &--info {
+    width: 538px;
+    max-width: 80vw;
+    text-align: right;
   }
 }
 

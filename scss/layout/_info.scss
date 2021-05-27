@@ -1,6 +1,6 @@
 .info {
-  padding-top: 100px;
-  padding-bottom: 90px;
+  @include padding-top(100);
+  @include padding-bottom(90);
   background-image: url("../img/bgimg-info.png");
   background-size: cover;
   background-position: center;
@@ -16,7 +16,8 @@
   &__sub-title {
     @include font-size(38);
     color: $sub-text-color;
-    padding-bottom: 38px;
+    /* padding-bottom: 38px; */
+    @include padding-bottom(38);
   }
 }
 

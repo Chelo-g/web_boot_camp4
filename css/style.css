@@ -219,7 +219,7 @@
 }
 
 .concept {
-  padding-top: 130px;
+  padding-top: 8.125rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -231,7 +231,7 @@
 }
 
 .concept__img {
-  padding-left: 46px;
+  padding-left: 2.875rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -248,19 +248,18 @@
     -o-object-fit: cover;
        object-fit: cover;
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 }
 
 .concept-info {
   width: 538px;
   max-width: 80vw;
-}
-
-.concept-info--info {
-  width: 538px;
-  max-width: 80vw;
-  text-align: right;
+  /*   %__message {
+    @include font-size(16);
+    line-height: 1.5;
+    color: $sub-text-color3;
+  } */
 }
 
 .concept-info__title {
@@ -272,16 +271,33 @@
 .concept-info__sub-title {
   font-size: 1.875rem;
   color: #4e3d1c;
-  padding-bottom: 41px;
+  /* padding-bottom: 41px; */
+  padding-bottom: 2.5625rem;
 }
 
-.concept-info .concept-info__message1, .concept-info .concept-info__message2, .concept-info .concept-info__message3 {
+.concept-info__message1 {
   font-size: 1rem;
+  line-height: 1.5;
   color: #3d3d3d;
 }
 
 .concept-info__message2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3d3d3d;
   line-height: calc(40 / 16);
+}
+
+.concept-info__message3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3d3d3d;
+}
+
+.concept-info--info {
+  width: 538px;
+  max-width: 80vw;
+  text-align: right;
 }
 
 @media screen and (max-width: 1200px) {
@@ -299,8 +315,10 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 55px;
+  /* padding-top: 90px;
+  padding-bottom: 55px; */
+  padding-top: 5.625rem;
+  padding-bottom: 3.4375rem;
 }
 
 .select__img {
@@ -326,8 +344,8 @@
 }
 
 .info {
-  padding-top: 100px;
-  padding-bottom: 90px;
+  padding-top: 6.25rem;
+  padding-bottom: 5.625rem;
   background-image: url("../img/bgimg-info.png");
   background-size: cover;
   background-position: center;
@@ -355,7 +373,8 @@
 .info__sub-title {
   font-size: 2.375rem;
   color: #fffff7;
-  padding-bottom: 38px;
+  /* padding-bottom: 38px; */
+  padding-bottom: 2.375rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -454,6 +473,8 @@
 .menu {
   padding-top: 100px;
   padding-bottom: 88px;
+  padding-top: 6.25rem;
+  padding-bottom: 5.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -589,7 +610,6 @@
 }
 
 .access {
-  padding-top: 100px;
   padding: 0 10vw;
   display: -webkit-box;
   display: -webkit-flex;
@@ -610,12 +630,14 @@
   font-size: 3.9375rem;
   color: #372800;
   padding-bottom: 20px;
+  /*     @include padding-bottom(20); */
 }
 
 .access__sub-title {
   font-size: 1.9375rem;
   color: #4e3d1c;
   padding-bottom: 38px;
+  /*     @include padding-bottom(38); */
 }
 
 .access__message {
@@ -623,6 +645,8 @@
   line-height: calc(27.2 / 16);
   padding-top: 40px;
   padding-bottom: 88px;
+  /*     @include padding-top(40);
+    @include padding-bottom(88); */
   text-align: center;
 }
 

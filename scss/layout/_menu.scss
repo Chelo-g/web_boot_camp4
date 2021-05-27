@@ -1,6 +1,8 @@
 .menu {
   padding-top: 100px;
   padding-bottom: 88px;
+  @include padding-top(100);
+  @include padding-bottom(88);
   display: flex;
   flex-direction: column;
   align-items: center;

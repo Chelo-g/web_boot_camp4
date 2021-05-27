@@ -1,8 +1,10 @@
 .select {
   display: flex;
   justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 55px;
+  /* padding-top: 90px;
+  padding-bottom: 55px; */
+  @include padding-top(90);
+  @include padding-bottom(55);
   &__img {
     padding-right: 46px;
   }

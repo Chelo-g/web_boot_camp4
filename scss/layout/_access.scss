@@ -1,5 +1,5 @@
 .access {
-  padding-top: 100px;
+  //padding top bottomが0でなければ、MAPの黄金比が崩れる
   padding: 0 10vw;
   display: flex;
   flex-direction: column;
@@ -8,17 +8,21 @@
     @include font-size(63);
     color: $main-text-color;
     padding-bottom: 20px;
+    /*     @include padding-bottom(20); */
   }
   &__sub-title {
     @include font-size(31);
     color: $sub-text-color2;
     padding-bottom: 38px;
+    /*     @include padding-bottom(38); */
   }
   &__message {
     @include font-size(16);
     line-height: calc(27.2 / 16);
     padding-top: 40px;
     padding-bottom: 88px;
+    /*     @include padding-top(40);
+    @include padding-bottom(88); */
     text-align: center;
   }
 }
