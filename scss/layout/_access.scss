@@ -8,6 +8,7 @@
     @include font-size(63);
     color: $main-text-color;
     padding-bottom: 20px;
+    font-family: "Oswald", sans-serif;
     /*     @include padding-bottom(20); */
   }
   &__sub-title {

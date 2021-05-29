@@ -5,6 +5,7 @@
     @include font-size(63);
     color: $main-text-color;
     padding-bottom: 18px;
+    font-family: "Oswald", sans-serif;
   }
   &__sub-title {
     @include font-size(30);

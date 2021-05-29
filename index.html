@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/destyle.css">
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="とにかくコーヒーが好き。そんな人に穏やかな気持ちでコーヒーを飲んでもらいたくてカフェを中国にオープンしました!">
     <title>Cafe Calmati</title>
+
+    <!--ogp-->
+    <meta property="og:title" content="Cafe Calmati登場!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="とにかくコーヒーが好き。そんな人に穏やかな気持ちでコーヒーを飲んでもらいたくてカフェを中国にオープンしました!">
+    <meta property="og:url" content="https://chelo-g.github.io/web_boot_camp4/" />
+    <meta property="og:image" content="./img/site-logo.png" />
+    <meta property="og:site_name" content="Cafe Calmati" />
+    <meta property="og:locale" content="ja_JP" />
+    <!--
+        facebook ogp
+        <meta property=”fb:app_id” content=”App-ID”>
+    -->
+    <!--twitter ogp-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Chelo_log">
 </head>
 
 <body>
@@ -44,10 +61,10 @@
                 <p class="concept-info__message3">
                     漂ってくる香りにもいろんな種類があることを知り、この違いを知ってほしいという想いから、コーヒーだけを提供するカフェをオープンしました。これはサンプルサイトです。 </p>
             </section>
-            <img class="concept__img" src="./img/concept_img.png" alt="Conceptっぽい画像">
+            <img class="concept__img" src="./img/concept_img.jpg" alt="Conceptっぽい画像">
         </article>
         <article class="select">
-            <img class="select__img" src="./img/select_img.png" alt="Selectしてるような画像">
+            <img class="select__img" src="./img/select_img.jpg" alt="Selectしてるような画像">
             <section class="concept-info--info">
                 <h1 class="concept-info__title">SELECT</h1>
                 <h2 class="concept-info__sub-title">厳選しています</h2>
@@ -56,16 +73,17 @@
                     ご自分のお気に入りを見つけて楽しんでください<br>
                 </p>
                 <p class="concept-info__message3">
-                    ちょっと酸味のある味が好きなんだけど、どれかわからない</BR>
+                    ちょっと酸味のある味が好きなんだけど、どれかわからない<br>
                     そんなお客様にもおすすめできますのでお気軽にお聞きください<br>
-                    これはサンプルサイトです</div>
+                    これはサンプルサイトです
+                </p>
             </section>
         </article>
         <article class="info" id="info">
             <h1 class="info__title">INFORMATION</h1>
             <h2 class="info__sub-title">今月のおすすめ</h2>
             <div class="info-box">
-                <img class="info-box__img" src="./img/info_img.png" alt="グァテマラ産コーヒー">
+                <img class="info-box__img" src="./img/info_img.jpg" alt="グァテマラ産コーヒー">
                 <div class="info-box__text-area">
                     <div class="info-box-logo">
                         <img class="info-box-logo__decoration" src="./img/info-decoration-top@2x.png"
@@ -86,22 +104,22 @@
             <div class="menu__box">
                 <div class="menu-box">
                     <div class="menu-box__item">
-                        <img class="menu-box__img" src="./img/menu_img01.png" alt="手頃なブレンドコーヒー">
+                        <img class="menu-box__img" src="./img/menu_blended-coffee.jpg" alt="手頃なブレンドコーヒー">
                         <h3 class="menu-box__menu-name">ブレンドコーヒー</h3>
                         <h4 class="menu-box__price">450
                             <span class="menu-box__price--unit">円</span>
                         </h4>
                     </div>
                     <div class="menu-box__item">
-                        <img class="menu-box__img" src="./img/menu_img02.png" alt="美味しいグアテマラコーヒー">
-                        <h3 class="menu-box__menu-name">グアテマラコーヒー</h3>
+                        <img class="menu-box__img" src="./img/menu_cafe-latte.jpg" alt="ミルク香るカフェラッテ">
+                        <h3 class="menu-box__menu-name">カフェラッテ</h3>
                         <h4 class="menu-box__price">4
                             <span class="menu-box__price--unit">$</span>
                         </h4>
                     </div>
                     <div class="menu-box__item">
-                        <img class="menu-box__img" src="./img/menu_img03.png" alt="ブーム到来タピオカミルクティ">
-                        <h3 class="menu-box__menu-name">タピオカミルクティ</h3>
+                        <img class="menu-box__img" src="./img/menu_ice-coffee.jpg" alt="火照った身体にアイスコーヒー">
+                        <h3 class="menu-box__menu-name">アイスコーヒー</h3>
                         <h4 class="menu-box__price">26
                             <span class="menu-box__price--unit">元</span>
                         </h4>
@@ -152,7 +170,7 @@
             <img class="js-btn-goto-top__img" src="./img/btn_page-top@2x.png" alt="トップへ移動"> </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src=" ./js/script.js"> </script>
+    <script src=" ./js/script.js"> </script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@
     color: $main-text-color;
     //weight demi
     padding-bottom: 18px;
+    font-family: "Oswald", sans-serif;
   }
   &__sub-title {
     @include font-size(38);

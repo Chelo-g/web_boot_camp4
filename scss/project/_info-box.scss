@@ -19,6 +19,10 @@
     color: $sub-text-color4;
     padding-top: 19px;
   }
+  &__img {
+    width: 230px;
+    object-fit: cover;
+  }
 }
 
 @include mq {

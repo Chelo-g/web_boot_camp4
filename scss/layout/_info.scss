@@ -1,7 +1,7 @@
 .info {
   @include padding-top(100);
   @include padding-bottom(90);
-  background-image: url("../img/bgimg-info.png");
+  background-image: url("../img/bgimg-info.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -10,6 +10,7 @@
   &__title {
     @include font-size(63);
     color: $sub-text-color;
+    font-family: "Oswald", sans-serif;
     //weight demi
     padding-bottom: 18px;
   }
